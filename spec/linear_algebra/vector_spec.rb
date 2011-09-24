@@ -1,5 +1,3 @@
-require File.expand_path('spec/spec_helper')
-
 describe Vector do
   let(:v) { Vector.new(1,2,3) }
 
