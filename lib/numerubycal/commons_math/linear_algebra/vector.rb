@@ -28,6 +28,8 @@ module Numerubycal
       def add!(other)
         check_dimension! other
 
+        # Use the underlying array reference because we
+        # do not want allocate any new memory or objects here.
         self_java_array  = @data.get_data_ref
         other_java_array = other.data.get_data_ref
 
@@ -43,6 +45,8 @@ module Numerubycal
       def subtract!(other)
         check_dimension! other
 
+        # Use the underlying array reference because we
+        # do not want allocate any new memory or objects here.
         self_java_array  = @data.get_data_ref
         other_java_array = other.data.get_data_ref
 
