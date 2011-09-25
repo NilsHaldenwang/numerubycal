@@ -1,0 +1,3 @@
+Numerubycal is the attempt to bring ruby to science. It is supposed to be a numerical library with a well defined interface and pluggable backends.
+
+I will start by providing an implementation using JRuby and the Apache Commons Math library.
